@@ -20,29 +20,31 @@ if (token) {
 
   const navigate = useNavigate();
 
-  const handleLogin = async (e) => {
-  e.preventDefault();
+  const handleSubmit = async (e) => {
 
-  try {
-    const response = await axios.post(
-      "https://teamtaskmanager-production-607b.up.railway.app/api/auth/login",
-      {
-        email,
-        password,
-      }
-    );
+    e.preventDefault();
 
-    localStorage.setItem("token", response.data.token);
+    try {
 
-    alert("Login Successful");
-
-    navigate("/dashboard");
-  } catch (error) {
-    console.log(error);
-
-    alert("Login Failed");
+      const response = await axios.post(
+  "https://teamtaskmanager-production-607b.up.railway.app/api/auth/login",
+  {
+    email,
+    password,
   }
-};
+);
+
+      localStorage.setItem("token", response.data.token);
+
+      alert("Login Successful");
+
+      navigate("/dashboard");
+
+    } catch (error) {
+
+      alert("Login Failed");
+    }
+  };
 
   return (
 
