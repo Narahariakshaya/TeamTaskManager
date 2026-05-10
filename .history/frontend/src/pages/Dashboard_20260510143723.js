@@ -128,9 +128,7 @@ function Dashboard() {
   };
 
   useEffect(() => {
-
   fetchTasks();
-
 }, [fetchTasks]);
 
   return (
