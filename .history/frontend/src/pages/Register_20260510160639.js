@@ -30,7 +30,7 @@ if (token) {
     try {
 
         await axios.post(
-  "https://teamtaskmanager-production-607b.up.railway.app/api/auth/signup",
+  "https://teamtaskmanager-production-607b.up.railway.app/api/auth/register",
   {
     name,
     email,
