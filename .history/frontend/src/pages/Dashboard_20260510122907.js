@@ -12,7 +12,7 @@ function Dashboard() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://localhost:5000/api/tasks",
+        "http://teamtaskmanager-production-607b.up.railway.app/api/tasks",
         {
           headers: {
             Authorization: `Bearer ${token}`
@@ -64,7 +64,7 @@ function Dashboard() {
                   const token = localStorage.getItem("token");
 
                   await axios.delete(
-                    `http://localhost:5000/api/tasks/${task._id}`,
+                    `http://teamtaskmanager-production-607b.up.railway.app/api/tasks/${task._id}`,
                     {
                       headers: {
                         Authorization: `Bearer ${token}`

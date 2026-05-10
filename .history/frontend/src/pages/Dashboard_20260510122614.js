@@ -29,7 +29,7 @@ return (
       const token = localStorage.getItem("token");
 
       await axios.delete(
-        `http://localhost:5000/api/tasks/${task._id}`,
+        `http://teamtaskmanager-production-607b.up.railway.app/api/tasks/${task._id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`

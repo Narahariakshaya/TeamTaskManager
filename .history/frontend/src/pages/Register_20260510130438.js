@@ -23,7 +23,7 @@ function Register() {
     try {
 
       await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "http://teamtaskmanager-production-607b.up.railway.app/api/auth/register",
         {
           name,
           email,
