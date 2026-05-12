@@ -1,4 +1,8 @@
+# Fixed Dashboard.js Code
 
+Replace your complete `frontend/src/pages/Dashboard.js` file with this code.
+
+```javascript
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -176,3 +180,24 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
+```
+
+# After Replacing Code
+
+Run these commands in terminal:
+
+```bash
+git add .
+git commit -m "fixed dashboard create task"
+git push
+```
+
+Then:
+
+1. Open Vercel
+2. Wait until deployment becomes `Ready`
+3. Refresh website
+4. Login again
+5. Create task
+
+Now task creation and task display should work correctly.
